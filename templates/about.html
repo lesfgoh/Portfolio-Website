@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-pic {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        .section-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/lesfgoh"> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/delta1/"> LinkedIn </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">About Me</h1>
+
+        <!-- Profile Image and Intro Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='71E7BE68-88AD-461B-B0F3-84E887BA46EB_1_105_c.jpg') }}" alt="My Profile Picture" class="profile-pic img-fluid">
+                <p>I'm Hong De, a software engineer specializing in payments processing and data science!</p>
+            </div>
+        </div>
+
+        <!-- Personal Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-box">
+                    <h3>Professional Experience</h3>
+                    <p>I previously specialized in payments processing at Citi. My personal passions are data science, developing technology solutions, and mentoring other developers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-box">
+                    <h3>Personal Interests</h3>
+                    <p>I really enjoy making jokes and laughing, because I believe humor is the quintessential slice of life. In my free time, I pursue a variety of interests including drawing, painting, and coding fun data analysis and software engineering projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Jia Yi - All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
